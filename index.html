@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Transaction Tracker</h1>
+
+    <form id="transaction-form">
+        <input type="number" id="amount" placeholder="Amount" required>
+        <select id="category" required>
+            <option value="" disabled selected>Category</option>
+            <option value="Food">Food</option>
+            <option value="Transport">Transport</option>
+            <option value="Utilities">Utilities</option>
+            <!-- Add more categories as needed -->
+        </select>
+        <input type="text" id="description" placeholder="Description" required>
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <h2>Transactions</h2>
+    <table id="transaction-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Date & Time</th>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Transactions will be added here -->
+        </tbody>
+    </table>
+
+    <h2>Total: <span id="total-amount">0</span></h2>
+
+    <div id="transaction-details">
+        <!-- Full transaction details will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
