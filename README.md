@@ -38,25 +38,34 @@
 1. Для доступа к элементам на веб-странице можно использовать методы DOM API, такие как getElementById, querySelector и querySelectorAll.
 
 // Получить элемент по ID
+
 const elementById = document.getElementById('elementId');
 
 // Получить первый элемент, соответствующий CSS-селектору
+
 const elementBySelector = document.querySelector('.className');
+
 2. Делегирование событий — это техника, при которой обработчик события устанавливается на родительский элемент, а не на каждый дочерний элемент. Когда событие происходит на одном из дочерних элементов, оно "всплывает" до родителя, где и обрабатывается. Это позволяет более эффективно управлять событиями, особенно когда элементы динамически добавляются или удаляются.
+
 3. Для изменения содержимого элемента DOM можно использовать свойства textContent или innerHTML.
 
 // Изменить текстовое содержимое элемента
+
 const element = document.getElementById('elementId');
 element.textContent = 'Новое содержимое';
 
 // Изменить HTML-содержимое элемента
+
 element.innerHTML = '<strong>Новое содержимое</strong>';
+
 4. Для добавления нового элемента в DOM можно использовать методы createElement и appendChild.
 
 // Создать новый элемент
+
 const newElement = document.createElement('div');
 newElement.textContent = 'Я новый элемент';
 
 // Добавить новый элемент в существующий элемент
+
 const parentElement = document.getElementById('parentId');
 parentElement.appendChild(newElement);
